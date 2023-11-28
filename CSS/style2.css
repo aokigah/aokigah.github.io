@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+
+body, html, button, input{
+  font-family: Lexend Deca, sans-serif;
+  color: #eee;
+}
+
+body, html{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(8, 8, 49, 0.45)), url('https://cdn.discordapp.com/attachments/998641657304055858/1175878257313316935/bg.png?ex=656cd4f7&is=655a5ff7&hm=c9a31148d1804453129406c43c1d46a540b7ca4c5a04ceb5bbd5d04c15d7e472&') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.checkout-loading{
+  overflow:hidden;
+  text-align: center;
+  width: 400px;
+  height: fit-content;
+  position: absolute;
+  top:0;left:0;right:0;bottom:0;
+  margin: auto;
+  background: #232329;
+  border-radius: 12px;
+}
+
+.checkout-head{
+  overflow:hidden;
+  line-height: 50px;
+  width: 100%;
+  font-size: 24px;
+  box-sizing: border-box;
+  height: 110px;
+  text-align: right;
+  padding: 30px;
+  background: linear-gradient(to right, #73C8A9, #373B44);
+}
+
+.shopping-icon{
+  height: 170px;
+  margin-top: -60px;
+  margin-left: -50px;
+  transform: rotate(-25deg);
+  float: left;
+}
+
+.price{
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(255,255,255,.25);
+}
+
+.payment-method{
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  background: rgba(255,255,255,.05);
+  transition: .1s ease;
+}
+
+.payment-method:hover{
+  cursor: pointer;
+  background: rgba(255,255,255,.1);
+}
+
+.payment-method:focus{
+  outline: none;
+}
+
+
+.payment-box{
+	padding: 1%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 366px;
+	background-color: #02020f;
+	border-radius: 26px;
+	margin-top: 8.5%;
+}
+
+.payment-box {
+    text-align: center;
+    box-shadow: 1px -7px 30px #10330d;
+    border-radius: -85px;
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.payment-box {}
+.payment-box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+	font-size: 30px !important;
+	font-weight: 600;
+}
+p{
+	color: #777;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+.payment-gui{
+	display: flex;
+	justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+	width: 80%;
+}
+
+a button{
+    background-color: #0e7490;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    
+    text-align: center;
+    transition: .4s all;
+}
+a:hover button{
+   background-color: #155e75;
+}
+.cncl{
+    padding: 20px;
+    width: 200px;
+    background-color: #164e63;
+}
+.cncl:hover{
+    background-color: #083344;
+}
+.price-btn{
+	width: 70px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    border: none;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form button{
+    display: inline-block;
+    font-size: 16px;
+    padding: 2px 53px 4px;
+    margin: -10px;
+    color: #141616;
+    font-weight: bold;
+    border-radius: 14px;
+    font-weight: 400;
+    border: none;
+    transition: .4s all !important;
+    cursor: pointer;
+    background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgb(231 255 222) 0%, #c2efb2 100.2% );
+}
+form button:hover{
+    color: #ffffffee;
+    font-weight: bolder;
+}
+input{
+	margin-left: auto;
+	margin-right: auto;
+	margin: 20px;
+	height: 28px;
+	width: 400px;
+	padding: -13px;
+	border-radius: 5px;
+	border: 2px solid #c2efb2;
+	height: 43px;
+	background-color: #ffffff;
+	color: #000 !important;
+	text-align: center;
+}
+::-webkit-input-placeholder {
+color: #000;
+font-weight: 600;
+}
+:-moz-placeholder { 
+color: #000;
+font-weight: 600;
+}
+::-moz-placeholder { 
+color: #000;
+font-weight: 600;
+}
+:-ms-input-placeholder {
+color: #000;
+font-weight: 600;
+}
+.payment-gui img{
+	border-radius: 10px;
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+.order-inf{
+	background-color: #4e4e4e;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	padding: 18px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+h3{
+	font-size: 18px;
+}
+strong{
+	font-weight: 700;
+}
+@media(max-width: 800px){
+	a button{
+		width: 300px;
+		height: 75px;
+	}
+	.order-inf{
+		padding: 32px;
+	}
+	.cncl{
+		border-radius: 50px;
+	}
+    .payment-box{
+        margin-top: 50%;
+    }
+}
+
+
+.price{
+	    width: 70px;
+	    color: #efefef;
+	    border-radius: 10px;
+	    margin: 5px;
+	    height: 70px;
+}
